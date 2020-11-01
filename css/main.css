@@ -1,0 +1,994 @@
+/*! normalize.css v7.0.0 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in
+ *    IE on Windows Phone and in iOS.
+ */
+
+html {
+  line-height: 1.15; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+
+body {
+  margin: 0;
+}
+
+/**
+ * Add the correct display in IE 9-.
+ */
+
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+
+a {
+  background-color: transparent; /* 1 */
+  -webkit-text-decoration-skip: objects; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+  font-weight: 700;
+}
+
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+
+img {
+  border-style: none;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: sans-serif; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input { /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select { /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+html [type="button"], /* 1 */
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+
+/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.5;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+html {
+	box-sizing: border-box;
+	font-size: 100%;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+html,
+body,
+container {
+	width: 100%;
+}   
+
+body {
+	min-width: 320px;
+	margin: 0;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	color: #444;
+	line-height: 1;
+	font-size: 1rem;
+	background: white;
+}
+
+
+#container {
+	width: 100%;
+	position: relative;
+}
+
+header,
+nav a,
+nav > button,
+#menu > a,
+h2,
+span.month,
+table.calendar th,
+button.facebook,
+aside.supplies li,
+aside.pumpkinfest a,
+h1 {
+	font-family: "Indie Flower", "Open Sans", Helvetica, Arial, sans-serif;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+button,
+a {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	outline: none;
+}
+button {
+	cursor: pointer;
+	border: none;
+	-webkit-appearance: none;
+}
+em {
+	color: #900;
+	font-weight: 700;
+}
+
+a {
+	color: #5583da;
+}
+
+
+header {
+	margin: 0;
+	padding: 1.2em 1em 0.4em 16px;
+	color: white;
+	background: #6185d5;
+	font-size: 32px;
+	font-weight: 700;
+}
+header a {
+	color: white;
+	text-decoration: none;
+}
+nav {
+	margin: 0;
+	padding: 0 1em;
+	background-color: #900;
+	border-bottom: 10px solid #600;
+	font-size: 1em;
+}
+
+nav > button {
+	color: white;
+	font-size: 1.5em;
+	padding: 0.5em 1em 0.25em;
+	font-weight: 700;
+	background-color: transparent;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-size: 16px 16px;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='white' stroke='none'%3E%3Crect x='0' y='3' height='2' width='100%25' /%3E%3Crect x='0' y='8' height='2' width='100%25' /%3E%3Crect x='0' y='13' height='2' width='100%25' /%3E%3C/svg%3E");
+}
+nav > div {
+	display: none;
+}
+nav a {
+	display: inline-block;
+	padding: 0.70em 0.70em 0.5em;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-weight: 700;
+	font-style: normal;
+	font-size: 20px;
+}
+nav a:hover {
+	background-color: #d04101;
+}
+nav a.selected {
+	background-color: #600;
+	cursor: default;
+	pointer-events: none;
+}
+
+.dropdown {
+	display: inline-block;
+	position: relative;
+}
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #900;
+	min-width: 100%;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;		
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+.dropdown-content > a {
+	min-width: 100%;
+	white-space: nowrap;
+}
+a.dropdown {
+	padding-right: 30px;
+	background-color: transparent;
+	background-position: right 10px center;
+	background-repeat: no-repeat;
+	background-size: 12px 8px;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' fill='none' stroke='white' stroke-width='2' opacity='0.75' %3E%3Cpolyline points='1,1 6,7 11,1' /%3E%3C/svg%3E");
+}
+
+
+#logo {
+	display: none;
+	position: absolute;
+	top: 20px;
+	left: 5px;
+	margin: 0;
+	padding: 0;
+}
+#logo img {
+	height: auto;
+}
+figure {
+	margin: 0;
+	padding: 0;
+	background: #600;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	height: 0;
+	padding: 56.25% 0 0 0;
+	border-bottom: 10px solid #600;
+}
+figure.welcome {
+/* 	background-image:url('../img/photo_003.jpg'); */
+	background-image:url('../img/SJNS_welcome.jpg');
+}
+figure.faculty {
+	background-image:url('../img/photo_018.jpg');
+}
+figure.admissions {
+	background-image:url('../img/photo_006.jpg');
+}
+figure.programs {
+/* 	background-image:url('../img/photo_010.jpg'); */
+	background-image:url('../img/SJNS_programs.jpg');
+}
+figure.resources {
+/* 	background-image:url('../img/photo_007.jpg'); */
+	background-image:url('../img/sjns005.jpg');
+}
+figure.board {
+/* 	background-image:url('../img/photo_004.jpg'); */
+	background-image:url('../img/sjns003.jpg');
+}
+figure.help {
+	background-image:url('../img/photo_010.jpg');
+}
+figure.tuition {
+	background-image:url('../img/photo_014.jpg');
+}
+
+
+main {
+	margin: 0 auto;
+	padding: 1em 0;
+/* 	font-size: calc([minimum size]px + ([maximum size] - [minimum size]) * ((100vw - [minimum viewport width]px) / ([maximum viewport width] - [minimum viewport width]))); */
+	width: calc(300px + (900 - 300) * ((100vw - 320px) / (1200 - 300)));
+	max-width: 900px;
+	
+}
+
+
+h1 {
+	color: #900;
+	background: url("../img/dots.png") repeat-x left bottom;
+	margin: 40px 0 24px 0;
+	font-weight: 700;
+	font-style: normal;
+	font-size: calc(28px + (48 - 28) * ((100vw - 320px) / (1200 - 320)));
+}
+h2 {
+	color: #900;
+	margin: 1em 0 0.5em;
+	font-weight: 700;
+	font-style: normal;
+	font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1200 - 320)));
+}
+
+main p {
+	line-height: 1.5;
+}
+
+
+img {
+	border-style: none;
+}
+img.inline {
+/* 	display: none; */
+	float: left;
+	margin: 0 10px 10px 0;
+}
+img.inline_right {
+	display: none;
+	float: right;
+	margin: 0 0 0 30px;
+}
+
+ul {
+	padding-left: 4px;
+	margin-left: 16px;
+	list-style: square;
+}
+
+li {
+	padding: 0;
+	margin: 0 0 0.5em 0;
+	line-height: 1.5;
+}
+
+#grass {
+	height: 80px;
+	margin: 0;
+	padding: 0;
+	background-image: url("../img/grass2.png");
+	background-repeat: repeat-x;
+	background-position: left bottom;
+	border-bottom: 5px solid #2d1b0c;
+}
+
+#footer {
+	margin: 0;
+	padding: 20px;
+	background: #47160f;
+	color: #897052;
+	text-align: center;
+	font-size: 0.875em;
+}
+
+#footer a {
+	color: #897052;
+	text-decoration: none;
+}
+#footer span.nowrap {
+	white-space: nowrap;
+}
+
+#menu {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	padding: 0 2em;
+	background-color: #900;
+	transform: translateY(-100%);
+	transition: transform 300ms ease-in-out;
+	box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+	display: none;
+}
+#menu.visible {
+	transform: translateY(0);
+}
+#menu > a {
+	display: block;
+	padding: 0.75em 0;
+	margin: 0;
+	color: white;
+	text-decoration: none;
+	font-weight: normal;
+	font-style: normal;
+	font-size: 1.5em;
+	border-bottom: 1px dotted rgba(255, 255, 255, 0.5);
+}
+#menu > a:last-of-type {
+	border-bottom: none;
+}
+#menu > a.selected {
+	color: rgba(255, 255, 255, 0.4);
+}
+#menu > button {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' fill='none' stroke='white' stroke-width='2'%3E%3Cline x1='20%25' y1='20%25' x2='80%25' y2='80%25' /%3E%3Cline x1='80%25' y1='20%25' x2='20%25' y2='80%25' /%3E%3C/svg%3E");
+}
+
+.teacher-row {
+	margin: 0 0 1em;
+}
+.teacher {
+	width: 100%;
+	float: none;
+}
+.teacher > h2 {
+	color: #900;
+	font-weight: 700;
+	font-size: 1.625em;
+	margin:  1em 0 0.25em;
+}
+.teacher > h3 {
+	color: #5583da;
+	margin: 0;
+	font-weight: 700;
+	font-size: 0.75em;
+	text-transform: uppercase;
+	line-height: 1.5;
+}
+
+.teacher-description {
+	width: 100%;
+	float: none;
+	padding: 0;
+	background-image: none;
+}
+/*
+ul.calendar {
+	padding: 0;
+	margin-left: 0;
+}
+ul.calendar > li {
+	list-style: none;
+	background: url("../img/cal.png") no-repeat left center;
+	padding: 12px 0 12px 40px;
+}
+*/
+blockquote.testimonial,
+div.teacher-description > blockquote {
+	font-style: italic;
+	font-weight: 600;
+	font-family: "Cormorant", Georgia, Times, serif;
+	line-height: 1.5;
+}
+
+blockquote.testimonial {
+	background-image: url("../img/openquote.png");
+	background-repeat: no-repeat;
+	background-position: left top;
+	margin: 1em 0;
+	padding-left: 60px;
+	font-size: calc(18px + (28 - 18) * ((100vw - 320px) / (1200 - 320)));
+}
+
+div.teacher-description > blockquote {
+	font-size: 1.25em;
+	margin: 0 0 1em 0;
+}
+p.attribution {
+	text-align: right;
+	font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1200 - 320)));
+	margin: 0 0 2em 0;
+}
+
+
+.resource-row {
+	margin: 1.5em 0;
+}
+.resource {
+	width: 100%;
+	float: none;
+}
+.resource > a {
+	display: block;
+	margin:  0.5em 0;
+	line-height: 1.5;
+}
+.resource > a:first-child {
+	margin-top:  1em;
+}
+.resource > a:last-child {
+	margin-bottom:  1em;
+}
+.resource-description {
+	width: 100%;
+	float: none;
+	padding: 0;
+}
+.resource-description p {
+	margin: 1em 0;
+}
+
+table.programs td {
+	padding: 5px 5px 5px 0;
+}
+table.programs td:first-child {
+	font-weight: 700;
+	color: #900;
+}
+
+table.calendar {
+	float: right;
+	width: 400px;
+	margin: 1em 0 1em 2em;
+	display: none;
+	border-left: 16px solid white;
+	border-bottom: 16px solid white;
+}
+table.calendar td {
+	border: none;
+	background-color: #900;
+	padding: 0 16px 16px 0;
+	color: white;
+}
+table.calendar tr:first-child td {
+	padding-top: 16px;
+}
+table.calendar td:first-child {
+	padding-left: 16px;
+	width: 140px;
+}
+table.calendar th {
+	border: none;
+	background-color: #600;
+	padding: 16px;
+	color: white;
+	font-size: 28px;
+	text-align: left;
+}
+
+span.month,
+span.year,
+span.description,
+span.time {
+	display: block;
+}
+span.month {
+	font-size: 32px;
+}
+span.year,
+span.time {
+	font-size: 0.875em;
+	color: rgba(255, 255, 255, 0.5);
+}
+span.description {
+	line-height: 1.5;
+}
+span.line {
+	display: inline-block;
+}
+
+button.facebook {
+	min-height: 52px;
+	color: #5583da;
+	display: block;
+	background-color: white;
+	background-image: url("../img/facebook.svg");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 50px 50px;
+	margin: 1em 0;
+	padding: 0 5px 0 58px;
+	font-size: calc(24px + (28 - 24) * ((100vw - 320px) / (1200 - 320)));
+}
+
+a.mail {
+	display: block;
+	margin: 0.2em 0 1em;
+	padding: 0;
+	width: 52px;
+	height: 34px;
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 50px 32px;
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='32' stroke='white' stroke-width='2' fill='%235583da' %3E%3Crect x='0' y='0' rx='6' ry='6' width='100%25' height='100%25'%3E%3C/rect%3E%3Cpolygon points='0,32 50,32 25,12'%3E%3C/polygon%3E%3Cpolygon points='0,0 50,0 25,20'%3E%3C/polygon%3E%3C/svg%3E");
+}
+
+#sticker {
+	width: 239px;
+	height: 241px;
+	background: url("../img/2014_Fall_sticker.png") no-repeat center center;
+	position: absolute;
+	top: 500px;
+	right: 20px;
+}
+
+aside.pumpkinfest,
+aside.openhouse,
+aside.supplies {
+	float: right;
+	width: 300px;
+	margin: 1em 0 1em 2em;
+	border-left: 16px solid white;
+	border-bottom: 16px solid white;
+	display: none;
+}
+aside.pumpkinfest {
+	background-color: #CF5300;
+}
+aside.openhouse {
+	background-color: #6185d5;
+}
+aside.supplies {
+	background-color: #900;
+}
+aside.openhouse h2,
+aside.pumpkinfest h2,
+aside.supplies h2 {
+	border: none;
+	margin: 0;
+	padding: 16px;
+	color: white;
+}
+aside.pumpkinfest h2 {
+	background-color: #600;
+}
+aside.supplies h2 {
+	background-color: #600;
+}
+aside.openhouse h2 {
+	background-color: #011f4b;
+}
+aside.pumpkinfest h3 {
+	font-size: 1.5rem;
+}
+aside.supplies ul {
+	padding: 0;
+	list-style-type: none;
+}
+aside.supplies li {
+	list-style-type: none;
+	color: white;
+	font-size: 1.75rem;
+}
+aside.openhouse h3,
+aside.openhouse p,
+aside.pumpkinfest h3,
+aside.pumpkinfest p {
+	margin: 16px;
+	color: white;
+}
+aside.pumpkinfest a {
+	color: white;
+	text-decoration: none;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+
+/* ==========================================================================
+
+   Media Queries
+
+   ========================================================================== */
+
+@media only screen and (min-width: 576px) {
+	/* tablet - portrait */
+	#logo {
+		display: block;
+	}
+	#logo img {
+		width: 260px;
+	}
+	header {
+		padding-left: 130px;
+	}
+	header:after {
+		content: " School";
+	}
+	nav {
+		padding-left: 280px;
+	}
+	figure {
+		padding-top: 44.4444444444%;
+	}
+	.teacher-description {
+		padding: 0 0 0 2em;
+		background-image: url("../img/openquote.png");
+		background-repeat: no-repeat;
+		background-position: left 4px;
+		background-size: 25.2px 20.4px;
+	}
+}
+@media only screen and (min-width: 768px) {
+	/* tablet - landscape */
+
+	#logo img {
+		width: 260px;
+	}
+	header {
+		padding-left: 130px;
+	}
+	nav {
+		padding-left: 270px;
+	}
+	img.inline_right {
+		display: block;
+	}
+	nav > div {
+		display: block;
+	}
+	nav > button {
+		display: none;
+	}
+	
+	.teacher {
+		width: 200px;
+		float: left;
+	}
+	.teacher > h2 {
+		margin: 0;
+	}
+/*
+	.teacher > h3 {
+		margin: 0;
+	}
+*/
+	
+	.teacher-description {
+		width: calc(100% - 200px);
+		float: left;
+	}
+
+	.resource {
+		width: 180px;
+		float: left;
+	}
+	.resource > a,
+	.resource > a:first-child,
+	.resource > a:last-child {
+		margin: 0 0 0.5em;
+	}
+	.resource-description {
+		width: calc(100% - 180px);
+		float: left;
+		padding: 0 0 0 1em;
+	}
+	.resource-description p {
+		margin: 0 0 1em;
+	}
+	
+
+	
+}
+@media only screen and (min-width: 800px) {
+	aside.pumpkinfest,
+	aside.openhouse,
+	aside.supplies {
+		display: block;
+	}
+}
+@media only screen and (min-width: 992px) {
+	/* desktop */
+	table.calendar {
+		display: table;
+	}
+	#logo img {
+		width: 272px;
+	}
+	header {
+		padding-left: 136px;
+	}
+	nav {
+		padding-left: 280px;
+	}
+	nav a {
+		font-size: 24px;
+	}
+	div.teacher-description > blockquote {
+		font-size: 1.375em;
+	}
+	.teacher {
+		width: 200px;
+	}
+	.teacher-description {
+		width: calc(100% - 200px);
+		float: left;
+	}
+}
+@media only screen and (min-width: 1200px) {
+	/* widescreen desktop */
+	header {
+		font-size: 48px;
+	}
+	nav a {
+		font-size: 28px;
+	}
+	#logo img {
+		width: 360px;
+	}
+	header {
+		padding-left: 180px;
+	}
+	nav {
+		padding-left: 372px;
+	}
+	blockquote.testimonial {
+		font-size: 28px;
+	}
+	p.attribution {
+		font-size: 20px;
+	}
+	h1 {
+		font-size: 48px;
+	}
+	button.facebook,
+	h2 {
+		font-size: 28px;
+	}
+	
+}
