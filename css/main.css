@@ -630,6 +630,11 @@ div.teacher-description > blockquote {
 	font-size: 1.25em;
 	margin: 0 0 1em 0;
 }
+div.teacher-description > p {
+	font-size: 1em;
+	margin: 0 0 1em 0;
+	line-height: 1.5;
+}
 p.attribution {
 	text-align: right;
 	font-size: calc(14px + (20 - 14) * ((100vw - 320px) / (1200 - 320)));
@@ -868,7 +873,7 @@ aside a.video-link {
 	figure {
 		padding-top: 44.4444444444%;
 	}
-	.teacher-description {
+	.teacher-description.quote {
 		padding: 0 0 0 2em;
 		background-image: url("../img/openquote.png");
 		background-repeat: no-repeat;
@@ -912,6 +917,7 @@ aside a.video-link {
 */
 	
 	.teacher-description {
+		padding: 0 0 0 2em;
 		width: calc(100% - 200px);
 		float: left;
 	}
@@ -963,6 +969,9 @@ aside a.video-link {
 	}
 	div.teacher-description > blockquote {
 		font-size: 1.375em;
+	}
+	div.teacher-description > p {
+		font-size: 1.125em;
 	}
 	.teacher {
 		width: 200px;
