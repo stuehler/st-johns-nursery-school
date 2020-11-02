@@ -814,11 +814,6 @@ aside.pumpkinfest p {
 	margin: 16px;
 	color: white;
 }
-aside.openhouse h2,
-aside.openhouse p {
-	border-top-right-radius: 0.5rem;
-	border-top-left-radius: 0.5rem
-}
 
 aside.pumpkinfest a {
 	color: white;
