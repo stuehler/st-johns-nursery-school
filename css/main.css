@@ -824,6 +824,7 @@ aside.pumpkinfest a {
 	color: white;
 	text-decoration: none;
 }
+
 .clearfix:before,
 .clearfix:after {
     content: " "; /* 1 */
@@ -845,6 +846,28 @@ aside a.video-link {
 	background-size: 4rem 4rem;
 	background-repeat: no-repeat;
 	background-image: url('../img/play.svg');
+}
+aside.mobile {
+	display: block;
+	background-color: #6185d5;
+	color: white;
+	border-radius: 0.5rem;
+}
+aside.mobile h2 {
+	padding: 1rem;
+	background-color: #011f4b;
+	color: white;
+	margin: 0;
+	border-top-right-radius: 0.5rem;
+	border-top-left-radius: 0.5rem;
+}
+aside.mobile p {
+	margin: 0;
+}
+aside.mobile a.video-link {
+	padding: 1.5rem 1rem 1.5rem 5rem;
+	background-size: 3rem 3rem;
+	background-position: left 1rem center;
 }
 
 /* ==========================================================================
@@ -948,6 +971,9 @@ aside a.video-link {
 	aside.openhouse,
 	aside.supplies {
 		display: block;
+	}
+	aside.mobile {
+		display: none;
 	}
 }
 @media only screen and (min-width: 992px) {
